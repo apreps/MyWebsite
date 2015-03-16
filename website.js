@@ -1,5 +1,9 @@
 $(document).ready(function(){
-
+	//Smooth scroll powered by: http://www.rolftjassens.com/blog/smooth-page-scroll-to-an-anchor
+	$(".scroll").click(function(event){
+		event.preventDefault();
+		$('html,body').animate( { scrollTop:$(this.hash).offset().top} , 1000);
+	})
 });
 
 /*
